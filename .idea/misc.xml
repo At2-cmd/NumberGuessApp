@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/SayTahmin/app/src/main/res/drawable/animation_gradient.xml" value="0.290625" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/SayTahmin/app/src/main/res/drawable/gradient_colour.xml" value="0.290625" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/SayTahmin/app/src/main/res/drawable/ic_baseline_help_24.xml" value="0.290625" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/SayTahmin/app/src/main/res/layout/activity_animation.xml" value="0.2545289855072464" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/SayTahmin/app/src/main/res/layout/activity_game.xml" value="0.2644927536231884" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/SayTahmin/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/SayTahmin/app/src/main/res/layout/game_page.xml" value="0.264" />

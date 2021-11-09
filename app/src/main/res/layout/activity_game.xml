@@ -10,13 +10,13 @@
     <TextView
         android:id="@+id/resultText"
         android:layout_width="0dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="112dp"
-        android:layout_marginBottom="249dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginBottom="93dp"
         android:gravity="center"
         android:text="TextView"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnGuessApply"
+        app:layout_constraintBottom_toTopOf="@+id/inputGuess"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,32 +24,36 @@
     <EditText
         android:id="@+id/inputGuess"
         android:layout_width="108dp"
-        android:layout_height="48dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="85dp"
         android:ems="10"
         android:gravity="center"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnGuessApply"
-        android:layout_width="121dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="150dp"
-        android:gravity="center"
-        app:icon="@android:drawable/ic_menu_help"
-        app:iconGravity="textTop"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuessApply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resultText" />
 
+    <Button
+        android:id="@+id/btnGuessApply"
+        android:layout_width="121dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="183dp"
+        android:gravity="center"
+        app:icon="@android:drawable/ic_menu_help"
+        app:iconGravity="textTop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputGuess" />
+
     <nl.dionsegijn.konfetti.KonfettiView
         android:id="@+id/konfettiView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        ></nl.dionsegijn.konfetti.KonfettiView>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></nl.dionsegijn.konfetti.KonfettiView>
 </androidx.constraintlayout.widget.ConstraintLayout>

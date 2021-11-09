@@ -7,6 +7,8 @@ import android.view.View
 import android.widget.Toast
 import com.example.saytahmin.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
+import java.util.*
+import kotlin.concurrent.schedule
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         var minRange = bindingMain.numberMin.text
         var maxRange= bindingMain.numberMax.text
 
+
+
         bindingMain.startBtn.setOnClickListener {
             if(minRange.toString() == "" || maxRange.toString() == "") {
                 Toast.makeText(this,"Minimum and Maximum Ranges cannot be empty!",Toast.LENGTH_SHORT).show()
@@ -33,10 +37,13 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("minimumRange",minRange.toString())
                 intent.putExtra("maximumRange",maxRange.toString())
                 startActivity(intent)
+
             }
             //After the current game finishes, we clear old data.
-            minRange.clear()
-            maxRange.clear()
+            Timer().schedule(2000) {
+                minRange.clear()
+                maxRange.clear()
+            }
         }
     }
 }
